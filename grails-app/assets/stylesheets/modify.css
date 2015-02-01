@@ -1,0 +1,208 @@
+@CHARSET "ISO-8859-1";
+
+
+html {
+	height: 100%;
+	width:100%;
+}
+
+body {
+	margin: auto;
+	padding-top: 70px;
+}
+
+
+.container {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -70px;
+  /* Pad bottom by footer height */
+  padding: 0 0 70px;
+}
+
+/* Set the fixed height of the footer here */
+.footer {
+  height: 70px;
+  background-color: #F2F2F2;
+  text-align: center;
+  padding: 15px;
+}
+
+.errors,
+.message {
+	font-size: 0.8em;
+	line-height: 2;
+	margin: 1em 2em;
+	padding: 0.25em;
+}
+
+.message {
+	background: #f3f3ff;
+	border: 1px solid #b2d1ff;
+	color: #006dba;
+	   -moz-box-shadow: 0 0 0.25em #b2d1ff;
+	-webkit-box-shadow: 0 0 0.25em #b2d1ff;
+	        box-shadow: 0 0 0.25em #b2d1ff;
+}
+
+.errors {
+	background: #fff3f3;
+	border: 1px solid #ffaaaa;
+	color: #cc0000;
+	   -moz-box-shadow: 0 0 0.25em #ff8888;
+	-webkit-box-shadow: 0 0 0.25em #ff8888;
+	        box-shadow: 0 0 0.25em #ff8888;
+}
+
+.errors ul,
+.message {
+	padding: 0;
+}
+
+.errors li {
+	list-style: none;
+	background: transparent url(../images/skin/exclamation.png) 0.5em 50% no-repeat;
+	text-indent: 2.2em;
+}
+
+.message {
+	background: transparent url(../images/skin/information.png) 0.5em 50% no-repeat;
+	text-indent: 2.2em;
+}
+
+/* form fields with errors */
+
+.error input, .error select, .error textarea {
+	background: #fff3f3;
+	border-color: #ffaaaa;
+	color: #cc0000;
+}
+
+.error input:focus, .error select:focus, .error textarea:focus {
+	   -moz-box-shadow: 0 0 0.5em #ffaaaa;
+	-webkit-box-shadow: 0 0 0.5em #ffaaaa;
+	        box-shadow: 0 0 0.5em #ffaaaa;
+}
+
+/* same effects for browsers that support HTML5 client-side validation (these have to be specified separately or IE will ignore the entire rule) */
+
+input:invalid, select:invalid, textarea:invalid {
+	background: #fff3f3;
+	border-color: #ffaaaa;
+	color: #cc0000;
+}
+
+input:invalid:focus, select:invalid:focus, textarea:invalid:focus {
+	   -moz-box-shadow: 0 0 0.5em #ffaaaa;
+	-webkit-box-shadow: 0 0 0.5em #ffaaaa;
+	        box-shadow: 0 0 0.5em #ffaaaa;
+}
+
+#questionContentForm {
+	resize: none;
+}
+
+
+
+#datesQuestion {
+	color: gray;
+	text-align: right;
+	font-weight: normal;
+	font-size: 0.7em;
+	margin-right: 20px;
+}
+
+.mark
+{
+	margin-top: 20px;
+	margin-left: 60px;
+	font-size: 1.5em;
+	float: left;
+	text-align: center;
+}
+
+.buttonMark
+{
+	width: 35px;
+	height: 35px;
+}
+
+#questionContentShow
+{
+	margin: 20px;
+	margin-left: 125px;
+}
+
+#questionCategoriesShow
+{
+	margin: 20px;
+	margin-left: 125px;
+}
+
+#answersTitleShow
+{
+	margin-top: 40px;
+	border-bottom: solid gray 2px;
+	margin-bottom: 20px;
+}
+
+.answerContentShow
+{
+	margin: 20px;
+	margin-left: 125px;
+}
+
+.commentContentShow {
+	margin-left: 100px;
+}
+
+.questionButtonShow {
+	margin-bottom: 30px;
+}
+
+#commentContentForm {
+	resize: none;
+}
+
+#answerContentForm {
+	resize: none;
+}
+
+.questionCreatedByShow {
+	font-size: 0.8em;
+	color: gray;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	text-align: right;
+}
+
+.contentQuestion
+{
+	min-height: 150px;
+}
+
+.contentAnswer
+{
+	min-height: 150px;
+}
+
+.answerShow
+{
+	border-bottom: solid gray 2px;
+	margin-bottom: 20px;
+}
+
+.commentShow
+{
+	border: solid gray 2px;
+	padding: 10px;
+	background-color: #F2F2F2;
+	border-radius: 9px;
+	margin-bottom: 20px;
+}
+
+.table .actionAdmin
+{
+	text-align: right;
+}
